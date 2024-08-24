@@ -32326,4 +32326,8 @@ span.select2-selection.select2-selection--single:focus {
   font-size: 0.7em;
   color: var(--theme-color);
 }
+
+.bg_offwhite{
+  background-color: #eeeeee;
+}
 /*# sourceMappingURL=style.css.map */
