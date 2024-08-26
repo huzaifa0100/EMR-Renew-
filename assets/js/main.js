@@ -1080,15 +1080,13 @@
     
 })(jQuery);
 
-// Add event listeners to each card for hover effect
-// Select all feature cards and the display image element
-const featureCards = document.querySelectorAll('.feature-card');
+const serviceBoxes = document.querySelectorAll('.service-box');
 const displayImage = document.getElementById('display-image');
 
-// Add event listeners to each card for the hover effect
-featureCards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        const newImage = card.getAttribute('data-image'); // Get the image from the card's data attribute
+// Add event listeners to each box for the hover effect
+serviceBoxes.forEach(box => {
+    box.addEventListener('mouseenter', () => {
+        const newImage = box.getAttribute('data-image'); // Get the image from the box's data attribute
         displayImage.src = newImage; // Set the new image source
         displayImage.style.display = 'block'; // Show the image when hovering
     });
