@@ -3396,7 +3396,7 @@ hr.title-line {
   height: 100%;
   width: 100%;
   mix-blend-mode: hue;
-  background: var(--theme-color);
+  /* background: var(--theme-color); */
   top: 0;
 }
 
