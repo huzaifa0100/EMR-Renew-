@@ -32320,4 +32320,16 @@ span.select2-selection.select2-selection--single:focus {
 .bg_offwhite{
   background-color: #eeeeee;
 }
+
+.badges_res{
+  max-width: 180px !important;
+  margin-top: 2rem;
+}
+
+@media (min-width: 769.99px) {
+  .badges_res{
+    display: none !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
