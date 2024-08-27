@@ -1091,3 +1091,42 @@ serviceBoxes.forEach(box => {
         displayImage.style.display = 'block'; // Show the image when hovering
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Get all buttons and filter items
+  const filterButtons = document.querySelectorAll('.custom-achievement-tabs button');
+  const filterItems = document.querySelectorAll('.custom-filter-item');
+
+  // Function to handle content visibility
+  function updateContentVisibility(activeFilter) {
+    filterItems.forEach(item => {
+      if (item.classList.contains(activeFilter.substring(1))) {
+        item.style.display = 'flex'; // Show the item
+      } else {
+        item.style.display = 'none'; // Hide the item
+      }
+    });
+  }
+
+  // Initial setup: show only the content related to the active button
+  const activeButton = document.querySelector('.custom-achievement-tabs button.active');
+  const initialFilter = activeButton.getAttribute('data-filter');
+  updateContentVisibility(initialFilter);
+
+  // Add click event listener to each button
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to the clicked button
+      button.classList.add('active');
+
+      // Get the filter value from data-filter attribute
+      const filterValue = button.getAttribute('data-filter');
+
+      // Update content visibility based on the filter value
+      updateContentVisibility(filterValue);
+    });
+  });
+});

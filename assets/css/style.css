@@ -5878,7 +5878,9 @@ a.text-theme:hover,
   top: 0;
   right: 0;
   left: 0;
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
+  background-color: #0002;
+  backdrop-filter: blur(30px);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
   -webkit-animation: stickyAni 0.4s ease-in-out;
   animation: stickyAni 0.4s ease-in-out;
@@ -32330,6 +32332,394 @@ span.select2-selection.select2-selection--single:focus {
   .badges_res{
     display: none !important;
   }
+}
+
+.custom-section {
+  background-color: #f5f7fa; /* Light blue-gray background */
+  padding: 60px 0;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.custom-button {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px; /* Larger padding for better visibility */
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #e22499;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #e22499;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #e22499;
+}
+
+.custom-button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #e22499;
+}
+
+.custom-button:active {
+  transform: scale(0.9);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow to images */
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns the button to the right */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .custom-section {
+      padding: 40px 0;
+  }
+
+  .section-heading {
+      font-size: 1.75rem;
+  }
+
+  .section-description {
+      font-size: 1rem;
+  }
+
+  .custom-button {
+      font-size: 1rem;
+      padding: 12px 25px; /* Adjust padding for smaller screens */
+  }
+
+  .img-fluid {
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-button {
+      font-size: 0.85rem; /* Adjust font size for extra small screens */
+      padding: 10px 20px; /* Further adjust padding */
+  }
+}
+
+.conss_check {
+  cursor: pointer;
+}
+
+.conss_check input {
+  display: none;
+}
+
+.conss_check svg {
+  overflow: visible;
+}
+
+.path {
+  fill: none;
+  stroke: #e22499;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+.conss_check input:checked ~ svg .path {
+  stroke-dasharray: 70.5096664428711 9999999;
+  stroke-dashoffset: -262.2723388671875;
+}
+
+.custom-send-button {
+  font-family: inherit;
+  font-size: 16px; /* Adjust font size for better fit */
+  background: #e22499; /* Button background color */
+  color: white;
+  padding: 0.7em 1.2em; /* Adjust padding */
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease; /* Adjusted transition for smoother effect */
+  cursor: pointer;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.custom-send-button span {
+  display: block;
+  margin-left: 0.8em; /* Increase margin to ensure space for icon */
+  transition: transform 0.3s ease-in-out; /* Adjusted transition */
+  transform: translateX(0); /* Initial position */
+}
+
+.custom-send-button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+  fill: white; /* SVG icon color */
+}
+
+.custom-send-button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.custom-send-button:hover svg {
+  transform: translateX(3em) rotate(45deg) scale(1.1); /* Adjust icon position and scale */
+}
+
+.custom-send-button:hover span {
+  transform: translateX(8em); /* Adjust to move text completely */
+}
+
+.custom-send-button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+.custom-about-section {
+  padding: 60px 0;
+  background-color: #f5f7fa; /* Light background color */
+}
+
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.custom-title-area {
+  margin-bottom: 35px;
+}
+
+.custom-sec-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.custom-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.custom-achievement-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.custom-achievement-tabs button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: var(--theme-color);
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 250ms, background-color 250ms;
+  text-align: center;
+  display: inline-block;
+}
+
+.custom-achievement-tabs button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #212121;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: transform 250ms;
+}
+
+.custom-achievement-tabs button:hover {
+  color: #e8e8e8;
+  background-color: #f57ab1;
+}
+
+.custom-achievement-tabs button:hover::before {
+  transform: translateX(0);
+}
+
+.custom-achievement-tabs button.active {
+  background: #e22499;
+  color: white;
+  box-shadow: none;
+}
+
+.custom-achievement-tabs button.active::before {
+  background-color: #e22499; /* Match the active button background */
+  transform: translateX(0); /* Ensure the background is fully visible */
+}
+
+
+.custom-achievement-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.custom-filter-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.custom-achievement-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  width: 100%;
+}
+
+.custom-img-container {
+  flex: 1;
+}
+
+.custom-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.custom-text-container {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.custom-box-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.custom-box-text {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.custom-btn {
+  border: none;
+  background-color: var(--theme-color);
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transform: translate(1) translate(0, 0);
+  transition: transform 225ms, box-shadow 225ms;
+}
+
+.custom-btn:hover {
+  transform: scale(1.05) translate(0, -0.15rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .custom-achievement-box {
+    flex-direction: column;
+  }
+  
+  .custom-text-container {
+    padding-left: 0;
+  }
+}
+
+/* Define the primary button styling */
+.btn_prims {
+  background-color: var(--theme-color); /* Use the theme color for background */
+  color: white; /* Text color */
+  padding: 15px 25px; /* Add padding for better appearance */
+  border: none; /* Remove default border */
+  border-radius: 15px; /* Rounded corners */
+  font-size: 17px; /* Font size */
+  font-weight: 600; /* Font weight */
+  text-align: center; /* Center text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 250ms; /* Smooth transition for all properties */
+  position: relative; /* Positioning for pseudo-elements */
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27); /* Subtle shadow for depth */
+  overflow: hidden; /* Hide overflow for pseudo-element effects */
+}
+
+/* Styling for the button's hover state */
+.btn_prims:hover {
+  color: white; /* Change text color on hover */
+}
+
+/* Pseudo-element for hover background effect */
+.btn_prims::before {
+  content: "";
+  position: absolute; /* Absolute positioning for full coverage */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Light overlay effect */
+  z-index: -1; /* Place behind text */
+  transition: all 250ms; /* Smooth transition for the effect */
+  opacity: 0; /* Start with hidden overlay */
+}
+
+/* Hover effect for the pseudo-element */
+.btn_prims:hover::before {
+  opacity: 1; /* Show overlay on hover */
+  background-color: rgba(0, 0, 0, 0.2); /* Darker overlay for hover */
+}
+
+.shadowss{
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
 }
 
 /*# sourceMappingURL=style.css.map */
