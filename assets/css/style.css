@@ -32092,26 +32092,94 @@ span.select2-selection.select2-selection--single:focus {
 .service-box {
   background-color: #fff;
   border-radius: 10px;
-  padding: 15px;
+  padding: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   /* margin: 10px; */
   cursor: pointer;
   transition: transform 0.3s ease;
-  display: inline-block; /* added this line */
+  display: inline-block;
+  /* added this line */
   height: auto;
   width: 100%;
 }
 
 @media (max-width: 991.98px) {
   .feature-description {
-      display: none;
+    display: none;
+  }
+
+  /* .sv_res{
+    min-height: 12rem;
+  } */
+
+}
+
+@media (min-width:991.98px) and (max-width: 1199.98px) {
+  .d_none_card {
+    display: none !important;
+  }
+
+}
+
+@media (min-width: 1199.98px) {
+  .d_none_card_1 {
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 991.98px) {
+  .d_none_card_1 {
+    display: none !important;
+  }
+
+}
+
+@media (min-width: 1199.98px) and (max-width: 1336.98px) {
+  .service-box {
+    height: 11.5rem !important;
+  }
+
+}
+
+@media (min-width: 991.98px) and (max-width: 1199.98px) {
+  .sv_res {
+    height: 13rem !important;
+  }
+
+  .feature-description {
+    line-height: 1.2rem !important;
+    margin: 0px !important;
+  }
+
+  .icon-box {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .feature-title {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .img_ress {
+    height: 50% !important;
   }
 }
-@media (min-width: 991.98px) {
+
+@media (min-width: 1299.98px) {
+  .img_ress {
+    height: 90% !important;
+  }
+
+  /* .service-box{
+    min-height: 12rem;
+  } */
+}
+
+/* @media (min-width: 991.98px) {
   .service-box{
     min-height: 13rem;
   }
-}
+} */
 
 
 .service-box:hover {
@@ -32120,24 +32188,28 @@ span.select2-selection.select2-selection--single:focus {
 
 .icon-box {
   text-align: center;
-  margin-bottom: 15px; /* reduced margin to 15px */
+  margin-bottom: 15px;
+  /* reduced margin to 15px */
 }
 
 .icon-box img {
-  width: 40px; /* reduced image size to 40px */
+  width: 40px;
+  /* reduced image size to 40px */
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .feature-title {
-  font-size: 0.85rem; /* reduced font size to 16px */
+  font-size: 0.85rem;
+  /* reduced font size to 16px */
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .feature-description {
-  font-size: 12px; /* reduced font size to 12px */
+  font-size: 12px;
+  /* reduced font size to 12px */
   color: #666;
 }
 
@@ -32149,27 +32221,30 @@ span.select2-selection.select2-selection--single:focus {
   margin-top: 2rem !important
 }
 
-.mn_bg_white{
+.mn_bg_white {
   background-color: white;
 }
 
-.logo_res{
+.logo_res {
   max-width: 150px !important;
 }
 
 @media (min-width: 1299.99px) {
-  .btn_res{
+  .btn_res {
     margin-top: 2rem;
   }
-  .mail_res{
+
+  .mail_res {
     margin-top: 2rem;
   }
 }
+
 @media (min-width: 1198.99px) and (max-width: 1299.98px) {
-  .btn_res{
+  .btn_res {
     margin-top: 2.9rem;
   }
-  .mail_res{
+
+  .mail_res {
     margin-top: 2.9rem;
   }
 }
@@ -32311,31 +32386,33 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 
-.btn_wd_res{
+.btn_wd_res {
   width: 7rem;
 }
-.crd_txt{
+
+.crd_txt {
   font-size: 0.7em;
   color: var(--theme-color);
 }
 
-.bg_offwhite{
+.bg_offwhite {
   background-color: #eeeeee;
 }
 
-.badges_res{
+.badges_res {
   max-width: 180px !important;
   margin-top: 2rem;
 }
 
 @media (min-width: 769.99px) {
-  .badges_res{
+  .badges_res {
     display: none !important;
   }
 }
 
 .custom-section {
-  background-color: #f5f7fa; /* Light blue-gray background */
+  background-color: #f5f7fa;
+  /* Light blue-gray background */
   padding: 60px 0;
 }
 
@@ -32357,7 +32434,8 @@ span.select2-selection.select2-selection--single:focus {
   position: relative;
   display: inline-block;
   margin: 15px;
-  padding: 15px 30px; /* Larger padding for better visibility */
+  padding: 15px 30px;
+  /* Larger padding for better visibility */
   text-align: center;
   font-size: 18px;
   letter-spacing: 1px;
@@ -32384,42 +32462,47 @@ span.select2-selection.select2-selection--single:focus {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow to images */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* Add shadow to images */
 }
 
 .button-container {
   display: flex;
-  justify-content: flex-end; /* Aligns the button to the right */
+  justify-content: flex-end;
+  /* Aligns the button to the right */
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   .custom-section {
-      padding: 40px 0;
+    padding: 40px 0;
   }
 
   .section-heading {
-      font-size: 1.75rem;
+    font-size: 1.75rem;
   }
 
   .section-description {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .custom-button {
-      font-size: 1rem;
-      padding: 12px 25px; /* Adjust padding for smaller screens */
+    font-size: 1rem;
+    padding: 12px 25px;
+    /* Adjust padding for smaller screens */
   }
 
   .img-fluid {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .custom-button {
-      font-size: 0.85rem; /* Adjust font size for extra small screens */
-      padding: 10px 20px; /* Further adjust padding */
+    font-size: 0.85rem;
+    /* Adjust font size for extra small screens */
+    padding: 10px 20px;
+    /* Further adjust padding */
   }
 }
 
@@ -32446,39 +32529,48 @@ span.select2-selection.select2-selection--single:focus {
   stroke-dashoffset: 0;
 }
 
-.conss_check input:checked ~ svg .path {
+.conss_check input:checked~svg .path {
   stroke-dasharray: 70.5096664428711 9999999;
   stroke-dashoffset: -262.2723388671875;
 }
 
 .custom-send-button {
   font-family: inherit;
-  font-size: 16px; /* Adjust font size for better fit */
-  background: #e22499; /* Button background color */
+  font-size: 16px;
+  /* Adjust font size for better fit */
+  background: #e22499;
+  /* Button background color */
   color: white;
-  padding: 0.7em 1.2em; /* Adjust padding */
+  padding: 0.7em 1.2em;
+  /* Adjust padding */
   display: flex;
   align-items: center;
   border: none;
   border-radius: 16px;
   overflow: hidden;
-  transition: all 0.3s ease; /* Adjusted transition for smoother effect */
+  transition: all 0.3s ease;
+  /* Adjusted transition for smoother effect */
   cursor: pointer;
-  white-space: nowrap; /* Prevent text wrapping */
+  white-space: nowrap;
+  /* Prevent text wrapping */
 }
 
 .custom-send-button span {
   display: block;
-  margin-left: 0.8em; /* Increase margin to ensure space for icon */
-  transition: transform 0.3s ease-in-out; /* Adjusted transition */
-  transform: translateX(0); /* Initial position */
+  margin-left: 0.8em;
+  /* Increase margin to ensure space for icon */
+  transition: transform 0.3s ease-in-out;
+  /* Adjusted transition */
+  transform: translateX(0);
+  /* Initial position */
 }
 
 .custom-send-button svg {
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
-  fill: white; /* SVG icon color */
+  fill: white;
+  /* SVG icon color */
 }
 
 .custom-send-button:hover .svg-wrapper {
@@ -32486,11 +32578,13 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .custom-send-button:hover svg {
-  transform: translateX(3em) rotate(45deg) scale(1.1); /* Adjust icon position and scale */
+  transform: translateX(3em) rotate(45deg) scale(1.1);
+  /* Adjust icon position and scale */
 }
 
 .custom-send-button:hover span {
-  transform: translateX(8em); /* Adjust to move text completely */
+  transform: translateX(8em);
+  /* Adjust to move text completely */
 }
 
 .custom-send-button:active {
@@ -32501,6 +32595,7 @@ span.select2-selection.select2-selection--single:focus {
   from {
     transform: translateY(0.1em);
   }
+
   to {
     transform: translateY(-0.1em);
   }
@@ -32508,7 +32603,8 @@ span.select2-selection.select2-selection--single:focus {
 
 .custom-about-section {
   padding: 60px 0;
-  background-color: #f5f7fa; /* Light background color */
+  background-color: #f5f7fa;
+  /* Light background color */
 }
 
 .custom-container {
@@ -32590,8 +32686,10 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .custom-achievement-tabs button.active::before {
-  background-color: #e22499; /* Match the active button background */
-  transform: translateX(0); /* Ensure the background is fully visible */
+  background-color: #e22499;
+  /* Match the active button background */
+  transform: translateX(0);
+  /* Ensure the background is fully visible */
 }
 
 
@@ -32670,7 +32768,7 @@ span.select2-selection.select2-selection--single:focus {
   .custom-achievement-box {
     flex-direction: column;
   }
-  
+
   .custom-text-container {
     padding-left: 0;
   }
@@ -32678,48 +32776,73 @@ span.select2-selection.select2-selection--single:focus {
 
 /* Define the primary button styling */
 .btn_prims {
-  background-color: var(--theme-color); /* Use the theme color for background */
-  color: white; /* Text color */
-  padding: 15px 25px; /* Add padding for better appearance */
-  border: none; /* Remove default border */
-  border-radius: 15px; /* Rounded corners */
-  font-size: 17px; /* Font size */
-  font-weight: 600; /* Font weight */
-  text-align: center; /* Center text */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: all 250ms; /* Smooth transition for all properties */
-  position: relative; /* Positioning for pseudo-elements */
-  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27); /* Subtle shadow for depth */
-  overflow: hidden; /* Hide overflow for pseudo-element effects */
+  background-color: var(--theme-color);
+  /* Use the theme color for background */
+  color: white;
+  /* Text color */
+  padding: 15px 25px;
+  /* Add padding for better appearance */
+  border: none;
+  /* Remove default border */
+  border-radius: 15px;
+  /* Rounded corners */
+  font-size: 17px;
+  /* Font size */
+  font-weight: 600;
+  /* Font weight */
+  text-align: center;
+  /* Center text */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: all 250ms;
+  /* Smooth transition for all properties */
+  position: relative;
+  /* Positioning for pseudo-elements */
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  /* Subtle shadow for depth */
+  overflow: hidden;
+  /* Hide overflow for pseudo-element effects */
 }
 
 /* Styling for the button's hover state */
 .btn_prims:hover {
-  color: white; /* Change text color on hover */
+  color: white;
+  /* Change text color on hover */
 }
 
 /* Pseudo-element for hover background effect */
 .btn_prims::before {
   content: "";
-  position: absolute; /* Absolute positioning for full coverage */
+  position: absolute;
+  /* Absolute positioning for full coverage */
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1); /* Light overlay effect */
-  z-index: -1; /* Place behind text */
-  transition: all 250ms; /* Smooth transition for the effect */
-  opacity: 0; /* Start with hidden overlay */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Light overlay effect */
+  z-index: -1;
+  /* Place behind text */
+  transition: all 250ms;
+  /* Smooth transition for the effect */
+  opacity: 0;
+  /* Start with hidden overlay */
 }
 
 /* Hover effect for the pseudo-element */
 .btn_prims:hover::before {
-  opacity: 1; /* Show overlay on hover */
-  background-color: rgba(0, 0, 0, 0.2); /* Darker overlay for hover */
+  opacity: 1;
+  /* Show overlay on hover */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Darker overlay for hover */
 }
 
-.shadowss{
+.shadowss {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.pads_res {
+  padding: 0.1rem !important;
 }
 
 /*# sourceMappingURL=style.css.map */
