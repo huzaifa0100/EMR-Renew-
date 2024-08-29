@@ -26794,7 +26794,7 @@ span.select2-selection.select2-selection--single:focus {
   overflow: hidden;
   position: relative;
   z-index: 2;
-  height: 58rem;
+  /* height: 58rem; */
 }
 
 .price-card_top {
@@ -33061,6 +33061,11 @@ span.select2-selection.select2-selection--single:focus {
   color:black !important
 }
 
+@media (min-width: 991.99px) {
+  .price-card {
+    height: 58rem;
+  }
+}
 @media (max-width: 991.99px) {
   .plans_d_none {
     display: none !important;
