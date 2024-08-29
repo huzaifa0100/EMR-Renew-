@@ -26794,6 +26794,7 @@ span.select2-selection.select2-selection--single:focus {
   overflow: hidden;
   position: relative;
   z-index: 2;
+  height: 58rem;
 }
 
 .price-card_top {
@@ -32843,6 +32844,220 @@ span.select2-selection.select2-selection--single:focus {
 
 .pads_res {
   padding: 0.1rem !important;
+}
+
+.tele_card {
+  right: 0px;
+  position: absolute;
+  margin-right: 0.5rem;
+}
+
+.ml-05 {
+  margin-left: 0.5rem;
+}
+
+
+.pricing-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+}
+
+.pricing-card h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pricing-card p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.pricing-price {
+  color: #333;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.pricing-price span {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.pricing-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pricing-button:hover {
+  background-color: #0056b3;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-card li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.pricing-card li i {
+  margin-right: 10px;
+  color: #555;
+}
+
+.check {
+  font-size: 18px;
+  color: #007bff;
+  margin-left: auto;
+}
+
+.pricing-features {
+  margin-top: 20px;
+}
+
+.pricing-features h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.pricing-features ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.pricing-features li {
+  margin-bottom: 5px;
+}
+
+.pricing-feature-detail {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 10px;
+
+}
+
+.pricing-feature-detail span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@media (max-width: 400px) {
+  .pricing-card {
+    width: 90%;
+  }
+}
+
+.telehealth-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tele_card {
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.card span.ml-05 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* add some margin bottom to separate each item */
+}
+
+.card span.ml-05 img {
+  margin-right: 10px;
+  /* add some margin right to separate the icon from the text */
+}
+
+.tele_card {
+  color: #e22499;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-left: 10px;
+  /* add some margin left to separate from the icon and text */
+}
+
+@media (min-width: 991.99px) {
+  .tele_card {
+    font-size: 1rem;
+  }
+}
+
+.detail-item {
+  padding: 10px 0;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.detail-item img {
+  margin-left: 0.5rem;
+  margin-right: 0.3rem;
+}
+
+.ever_incl {
+  font-size: 1.3rem;
+}
+
+.telehealth-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  bottom: 10px;
+}
+
+.colzz {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.colzz_0 {
+  justify-content: center;
+  display: flex;
+}
+
+.sticky-section {
+  position: sticky;
+  top: 7rem;
+  /* Adjust this value based on your navbar height */
+  z-index: 1020;
+  /* Make sure it sits above other content */
+  background-color: white;
+  /* Ensure visibility */
+  padding: 10px;
+  /* Optional: Add padding for spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Optional: Add shadow for distinction */
+}
+
+.plans_brdr{
+  border: var(--theme-color) 1px solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.text-black{
+  color:black !important
 }
 
 /*# sourceMappingURL=style.css.map */
