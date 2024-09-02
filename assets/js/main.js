@@ -1093,6 +1093,10 @@ serviceBoxes.forEach(box => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Set the initial image when the page loads
+  displayImage.src = 'assets/img/project/scheduler.png';
+  displayImage.style.display = 'block'; // Ensure the image is displayed initially
+
   // Get all buttons and filter items
   const filterButtons = document.querySelectorAll('.custom-achievement-tabs button');
   const filterItems = document.querySelectorAll('.custom-filter-item');
