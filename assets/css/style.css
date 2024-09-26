@@ -32136,14 +32136,21 @@ span.select2-selection.select2-selection--single:focus {
 
 @media (min-width: 1199.98px) and (max-width: 1336.98px) {
   .service-box {
-    height: 15.5rem !important;
+    height: 16.5rem !important;
+  }
+
+}
+
+@media (min-width: 1336.98px) {
+  .service-box {
+    height: 14.5rem !important;
   }
 
 }
 
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
   .sv_res {
-    height: 16rem !important;
+    height: 20rem !important;
   }
 
   .feature-description {
