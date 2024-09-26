@@ -1,12 +1,5 @@
 @charset "UTF-8";
-/*
-Template Name: Webteck
-Template URL: http://themeholy.com/html/webteck
-Description: Technology & IT Solutions HTML Template
-Author: Themeholy
-Author URI: https://themeforest.net/user/themeholy
-Version: 1.0.0
-*/
+
 /*=================================
     CSS Index Here
 ==================================*/
@@ -32136,20 +32129,25 @@ span.select2-selection.select2-selection--single:focus {
 
 }
 
+.des_cl_res{
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
 @media (min-width: 1199.98px) and (max-width: 1336.98px) {
   .service-box {
-    height: 11.5rem !important;
+    height: 15.5rem !important;
   }
 
 }
 
 @media (min-width: 991.98px) and (max-width: 1199.98px) {
   .sv_res {
-    height: 13rem !important;
+    height: 16rem !important;
   }
 
   .feature-description {
-    line-height: 1.2rem !important;
+    /* line-height: 1.2rem !important; */
     margin: 0px !important;
   }
 
@@ -33061,11 +33059,24 @@ span.select2-selection.select2-selection--single:focus {
   color:black !important
 }
 
-@media (min-width: 991.99px) {
+@media (min-width: 991.99px) and (max-width:1195.97px) {
   .price-card {
     height: 58rem;
   }
 }
+
+@media (min-width: 1300px) {
+  .price-card {
+    height: 58rem;
+  }
+}
+
+@media (min-width: 1195.99px) and ( max-width:1299.99px) {
+  .price-card {
+    height: 66rem !important;
+  }
+}
+
 @media (max-width: 991.99px) {
   .plans_d_none {
     display: none !important;
