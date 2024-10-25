@@ -5,11 +5,6 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Insurance | My Notes EMR</title>
-    <meta name="author" content="">
-    <meta name="description" content=" - Technology & IT Solutions HTML Template">
-    <meta name="keywords" content=" - Technology & IT Solutions HTML Template">
-    <meta name="robots" content="INDEX,FOLLOW">
-
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -154,22 +149,26 @@ Header Area
         <!-- Main Menu Area -->
         <div class="menu-area">
             <div class="container th-container4">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-auto">
+                <div class="row align-items-center">
+                    <div class="col-6 col-lg-auto"> <!-- Added col-lg-auto -->
                         <div class="header-logo">
-                            <a class="icon-masking" href="index.html"><span
-                                    data-mask-src="assets/img/brand/logo.jpeg" class="mask-icon"></span><img
-                                    src="assets/img/brand/logo.jpeg" alt="Webteck" class="logo_res"></a>
+                            <a class="icon-masking" href="index.html">
+                                <span data-mask-src="assets/img/brand/logo.jpeg" class="mask-icon"></span>
+                                <img src="assets/img/brand/logo.jpeg" alt="Webteck" class="logo_res">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-auto">
-                        <nav class="main-menu style2 d-none d-lg-inline-block">
-                            <ul>
+                    <div class="col-6 text-end d-block d-lg-none">
+                        <button type="button" class="th-menu-toggle"><i class="far fa-bars"></i></button>
+                    </div>
+                    <div class="col-lg ps-lg-5 d-none d-lg-block"> <!-- Changed to start content from left -->
+                        <nav class="main-menu style2">
+                            <ul class="ms-4 text-start"> <!-- Added text-start -->
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.html" class="fw-bold">Home</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="#">Features</a>
+                                    <a href="#" class="fw-bold">Features</a>
                                     <ul class="sub-menu">
                                         <li><a href="feature1.html">Scheduling</a></li>
                                         <li><a href="feature2.html">Billing</a></li>
@@ -181,19 +180,15 @@ Header Area
                                         <li><a href="feature8.html">Support</a></li>
                                     </ul>
                                 </li>
-                                <!-- <li><a href="about.html">About Us</a></li> -->
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <a href="contact.html" class="fw-bold">Contact</a>
                                 </li>
                             </ul>
                         </nav>
-                        <button type="button" class="th-menu-toggle d-block d-lg-none"><i
-                                class="far fa-bars"></i></button>
                     </div>
-                    <div class="col-auto d-lg-block d-xl-block d-none">
+                    <div class="col-lg-auto d-none d-lg-block"> <!-- Changed to col-lg-auto -->
                         <div class="header-button">
-                            <a href="https://therapist.southfloridabillcare.com/Welcome.aspx" target="_blank"
-                                class="th-btn style-radius">Login</a>
+                            <a href="https://therapist.southfloridabillcare.com/Welcome.aspx" target="_blank" class="th-btn style-radius fw-bold">Login</a>
                         </div>
                     </div>
                 </div>
@@ -210,7 +205,7 @@ Hero Area
         <div class="space m-4 mt-5 mb-0 pb-0">
             <div class="row align-items-center mb-5">
                 <div class="col-lg-6">
-                    <img src="assets/img/project/Insurance_feature.png" class="img-fluid rounded shadowss" alt="Insurance">
+                    <img src="assets/img/project/insurance1.png" class="img-fluid rounded shadowss w-100" alt="Insurance">
                 </div>
                 <div class="col-lg-6">
                     <div class="d-flex flex-column justify-content-center h-100 text-left">
@@ -238,7 +233,7 @@ Hero Area
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/img/project/Insurance_feature.png" class="img-fluid rounded shadowss" alt="Payer Support">
+                    <img src="assets/img/project/insurance2.png" class="img-fluid rounded shadowss w-100" alt="Payer Support">
                 </div>
             </div>
         </div>
