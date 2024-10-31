@@ -5911,7 +5911,7 @@ a.text-theme:hover,
   display: block;
   position: relative;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: var(--title-color);
   font-family: var(--title-font);
   text-transform: uppercase;
