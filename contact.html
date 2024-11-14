@@ -202,112 +202,147 @@ Hero Area
 ==============================-->
 
     <section>
-        <div class="m-4 mt-5 mb-0 space pb-0">
+        <div class="m-4 mb-0 space mt-0 pt-0 pb-0">
             <div class="bg-smoke space" id="contact-sec">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6">
-                            <div class="title-area mb-35 text-xl-start text-center">
+                        <div class="col-xl-6 bg_white rounded position-relative">
+                            <div class="title-area mb-35 mt-4 text-xl-start text-center">
                                 <span class="sub-title">
                                     <div class="icon-masking me-2">
-                                        <span class="mask-icon"
-                                            data-mask-src="assets/img/theme-img/title_shape_2.svg"></span>
+                                        <span class="mask-icon" data-mask-src="assets/img/theme-img/title_shape_2.svg"></span>
                                         <img src="assets/img/theme-img/title_shape_2.svg" alt="shape">
-                                    </div>contact with us!
+                                    </div>
+                                    Contact with us!
                                 </span>
-                                <h2 class="sec-title">How To Connect</h2>
-                                <p class="sec-text">Please fill up the form and one of our support team member will
-                                    reach back to you shortly. </p>
+                                <h2 class="sec-title mt-4">How To Connect</h2>
+                                <p class="sec-text mt-2">Please fill up the form and one of our support team members will reach back to you shortly.</p>
                             </div>
-                            <form action="mail.php" method="POST" class="contact-form ajax-contact">
+                        
+                            <!-- Divider line -->
+                            <div class="mt-4 mb-4">
+                                <hr class="m-4">
+                            </div>
+                        
+                            <!-- Contact Form -->
+                            <form action="mail.php" method="POST" class="contact-form ajax-contact d-flex flex-column">
                                 <div class="row">
-                                    <div class="form-group col-md-6">
-                                        <input type="text" class="form-control" name="name" id="name"
-                                            placeholder="Your Name">
+                                    <!-- Name Input -->
+                                    <div class="form-group col-md-6 mt-3">
+                                        <input type="text" class="form-control bg-light text-dark rounded" name="name" id="name" placeholder="Your Name">
                                         <i class="fal fa-user"></i>
                                     </div>
-                                    <div class="form-group col-md-6">
-                                        <input type="tel" class="form-control" name="number" id="number"
-                                            placeholder="Phone Number">
+                        
+                                    <!-- Phone Number Input -->
+                                    <div class="form-group col-md-6 mt-3">
+                                        <input type="tel" class="form-control bg-light text-dark rounded" name="number" id="number" placeholder="Phone Number">
                                         <i class="fal fa-phone"></i>
                                     </div>
-                                    
-                                    <!-- <div class="form-group col-md-6">
-                                        <select name="subject" id="subject" class="form-select">
-                                            <option value="" disabled selected hidden>Select Subject</option>
-                                            <option value="Web Development">Web Development</option>
-                                            <option value="Brand Marketing">Brand Marketing</option>
-                                            <option value="UI/UX Designing">UI/UX Designing</option>
-                                            <option value="Digital Marketing">Digital Marketing</option>
-                                        </select>
-                                        <i class="fal fa-chevron-down"></i>
-                                    </div> -->
-                                    <div class="form-group col-12">
-                                        <input type="email" class="form-control" name="email" id="email"
-                                            placeholder="Email Address">
+                        
+                                    <!-- Email Input -->
+                                    <div class="form-group col-12 mt-3">
+                                        <input type="email" class="form-control bg-light text-dark rounded" name="email" id="email" placeholder="Email Address">
                                         <i class="fal fa-envelope"></i>
                                     </div>
-                                    <div class="form-group col-12">
-                                        <textarea name="message" id="message" cols="30" rows="3" class="form-control"
-                                            placeholder="Your Message"></textarea>
+                        
+                                    <!-- Message Textarea -->
+                                    <div class="form-group col-12 mt-3">
+                                        <textarea name="message" id="message" cols="30" rows="3" class="form-control bg-light text-dark rounded" placeholder="Your Message" style="min-height: 200px;"></textarea>
                                         <i class="fal fa-comment"></i>
                                     </div>
-                                    <div class="form-btn text-xl-start text-center col-12">
-                                        <button class="custom-send-button">
-                                            <div class="svg-wrapper-1">
-                                              <div class="svg-wrapper">
-                                                <svg viewBox="0 0 24 24" width="24" height="24">
-                                                  <path fill="none" d="M0 0h24v24H0z"></path>
-                                                  <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-                                                </svg>
-                                              </div>
-                                            </div>
-                                            <span>Send Message</span>
-                                          </button>
-                                          
+                        <div class="mt-4 mb-4">
+                            <hr class="m-4">
+                        </div>
+                                    <!-- Agreement Checkbox -->
+                                    <div class="form-group mt-4">
+                                        <label class="conss_check">
+                                            <input type="checkbox" id="custom-checkbox">
+                                            <svg viewBox="0 0 64 64" height="1.3em" width="1.3em" style="margin-right:0.5rem">
+                                                <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+                                            </svg>
+                                            I Agree With Terms of Use and Privacy Policy
+                                        </label>
                                     </div>
                                 </div>
-                                <p class="form-messages mb-0 mt-3"></p>
+                        
+                                <!-- Send Button at Bottom Right -->
+                                <div class="form-btn text-end mb-3 col-12 bottom-0 end-0">
+                                    <button class="custom-send-button">
+                                      <div class="svg-wrapper-1">
+                                        <div class="svg-wrapper">
+                                          <svg viewBox="0 0 24 24" width="24" height="24">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <span>Send Message</span>
+                                    </button>
+                                  </div>
                             </form>
+                        
+                            <p class="form-messages mb-0 mt-3"></p>
                         </div>
+                        
+                        
                         <div class="col-xl-6">
-                            <div class="map-sec mt-3">
-                                <<iframe
+                            <div class="map-sec border rounded">
+                                <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.4288949039037!2d-80.42696852623419!3d25.657073512923603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9c1bda0c00001%3A0xc3e1137a13cb5e2e!2s14221%20SW%20120th%20St%20Suite%20232%2C%20Miami%2C%20FL%2033186%2C%20USA!5e0!3m2!1sen!2s!4v1724511629700!5m2!1sen!2s"
-                                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                     style="border:0;" allowfullscreen="" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                             <div>
                                 <div class="row">
-                                    <div class="col-md-4 mt-2">
+                                    <!-- Phone Section -->
+                                    <div class="mt-2">
                                         <div class="card">
                                             <div class="card-body">
-                                                <h5 class="card-title">Phone</h5>
-                                                <a class="card-text" href="tel:1888 668 6705">1888 668 6705</a>
+                                                <!-- Phone Icon and Title/Data in the same div -->
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas theme_icn fa-phone-alt fs-3 me-4"></i> <!-- Increased Icon Size with More Space -->
+                                                    <div>
+                                                        <h5 class="card-title mb-0">Phone</h5> <!-- Phone Title -->
+                                                        <a href="tel:1888 668 6705" class="d-block mt-2 fs-5">1888 668 6705</a> <!-- Phone Number with Increased Font Size -->
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="col-md-4 mt-2">
+                                    
+                                    <div class="mt-2">
                                         <div class="card">
                                             <div class="card-body">
-                                                <h5 class="card-title">Email</h5>
-                                                <a class="card-text crd_txt"
-                                                    href="support@mynotesemr.com">support@mynotesemr.com</a>
+                                                <!-- Email Icon and Title/Data in the same div -->
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas theme_icn fa-envelope fs-3 me-4"></i> <!-- Increased Icon Size with More Space -->
+                                                    <div>
+                                                        <h5 class="card-title mb-0">Email</h5> <!-- Email Title -->
+                                                        <a href="mailto:support@mynotesemr.com" class="d-block mt-2 fs-5">support@mynotesemr.com</a> <!-- Email Address with Increased Font Size -->
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="col-md-4 mt-2">
+                                    
+                                    <div class="mt-2">
                                         <div class="card">
                                             <div class="card-body">
-                                                <h5 class="card-title">Address</h5>
-                                                <p class="card-text crd_txt">14221 SW 120 ST, Suite 232 Miami, FL 33186
-                                                </p>
+                                                <!-- Address Icon and Title/Data in the same div -->
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas theme_icn fa-map-marker-alt fs-3 me-4"></i> <!-- Increased Icon Size with More Space -->
+                                                    <div class="">
+                                                        <h5 class="card-title mb-0">Address</h5> <!-- Address Title -->
+                                                        <p class="d-block mt-2 fs-5">14221 SW 120 ST, Suite 232 Miami, FL 33186</p> <!-- Address with Increased Font Size -->
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
