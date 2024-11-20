@@ -967,8 +967,8 @@
 
         TweenMax.set(follower, {
             css: {
-            left: posX - 12,
-            top: posY - 12
+            left: posX - 15,
+            top: posY - 1
             }
         });
 

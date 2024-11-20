@@ -80,8 +80,8 @@
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #e22499;
-  --theme-color2: #e22499;
+  --theme-color: #ae4189;
+  --theme-color2: #ae4189;
   --title-color: #141D38;
   --body-color: #737887;
   --smoke-color: #F5F5F5;
@@ -26790,7 +26790,7 @@ span.select2-selection.select2-selection--single:focus {
   overflow: hidden;
   position: relative;
   z-index: 2;
-  /* height: 58rem; */
+  height: 100%;
 }
 
 .price-card_top {
@@ -32994,7 +32994,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .tele_card {
-  color: #e22499;
+  color: var(--theme-color);
   font-size: 0.75rem;
   font-weight: bold;
   margin-left: 10px;
@@ -33067,34 +33067,14 @@ span.select2-selection.select2-selection--single:focus {
   color:black !important
 }
 
-@media (min-width: 991.99px) and (max-width:1195.97px) {
-  .price-card {
-    min-height: 70rem;
-  }
-}
 
-@media (min-width: 1300px) {
-  .price-card {
-    min-height: 70rem;
-  }
-}
-
-@media (min-width: 1195.99px) and ( max-width:1299.99px) {
-  .price-card {
-    min-height: 74rem !important;
-  }
-}
 
 @media (max-width: 991.99px) {
   .plans_d_none {
     display: none !important;
   }
 }
-@media (min-width: 767.99px) and (max-width:991.98px) {
-  .price-card {
-    min-height: 73rem;
-  }
-}
+
 
 .custom-box-text i {
   color: var(--theme-color); /* Apply theme color to the tick icon */
@@ -33127,4 +33107,5 @@ span.select2-selection.select2-selection--single:focus {
 .mr-auto{
   margin-right:auto !important ;
 }
+
 /*# sourceMappingURL=style.css.map */
