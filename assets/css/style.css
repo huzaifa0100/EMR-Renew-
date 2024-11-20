@@ -33119,4 +33119,12 @@ span.select2-selection.select2-selection--single:focus {
 .bg_white{
   background-color: white;
 }
+
+.ml-auto{
+  margin-left:auto !important ;
+}
+
+.mr-auto{
+  margin-right:auto !important ;
+}
 /*# sourceMappingURL=style.css.map */
