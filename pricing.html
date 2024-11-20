@@ -226,14 +226,14 @@ Price Area
                     </div>
                     OUR PRICING
                 </span> -->
-                <h2 class="sec-title space">My Notes <span class="text-theme fw-normal">EMR</span> Packages</h2>
-                <p>Explore all our features with a 30-day free trial of the Plus plan. Once your trial ends, choose the
+                <h2 class="sec-title space p-0">My Notes <span class="text-theme fw-normal">EMR</span> Packages</h2>
+                <p class="mb-4">Explore all our features with a 30-day free trial of the Plus plan. Once your trial ends, choose the
                     plan that’s right for you.</p>
             </div>
             <div class="row gy-4 justify-content-center">
 
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <div class="price-card">
+                    <div class="price-card d-flex flex-column">
                         <div class="price-card_top">
                             <h3 class="price-card_title">Starter</h3>
                             <p class="price-card_text">Begin with the basics for your private practice.</p>
@@ -244,7 +244,7 @@ Price Area
                                 <div class="price-particle" id="price-p1"></div>
                             </div>
                         </div>
-                        <div class="price-card_content">
+                        <div class="price-card_content flex-grow-1">
                             <h3 class="ever_incl">Starter Features:</h3>
                             <div class="checklist">
                                 <ul>
@@ -259,24 +259,28 @@ Price Area
                                     <li><i class="fas fa-circle-check"></i> Mobile app</li>
                                 </ul>
                             </div>
-                            <div class="card">
-                                <div class="row detail-item">
-                                    <div class="col-6 d-flex align-items-center">
+                            <div class="">
+                                <div class="detail-item pb-3 bg-white border rounded">
+                                    <div class="d-flex align-items-center">
                                         <img src="assets/img/icon/info.svg" alt="">
                                         <span>Telehealth</span>
                                     </div>
-                                    <div class="col-6 text-end">
-                                        <span class="tele_card">Add for $15/mo</span>
+                                    <div class="text-end">
+                                        <span class="tele_card d-block">Add for $15/mo</span>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <!-- Align button to the bottom -->
+                        <div class="mt-auto price-card_content">
                             <a href="pricing.html" class="th-btn mt-4">Start For Free<i class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
+                    
                 </div>
             
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <div class="price-card">
+                    <div class="price-card d-flex flex-column">
                         <div class="price-card_top">
                             <h3 class="price-card_title">Essential</h3>
                             <p class="price-card_text">Simplify your practice with all of the essentials.</p>
@@ -287,7 +291,9 @@ Price Area
                                 <div class="price-particle" id="price-p3"></div>
                             </div>
                         </div>
-                        <div class="price-card_content">
+                        
+                        <!-- Content section where features and details are listed -->
+                        <div class="price-card_content flex-grow-1">
                             <h3 class="ever_incl">Everything in Starter, plus:</h3>
                             <div class="checklist">
                                 <ul>
@@ -300,44 +306,52 @@ Price Area
                                     <li><i class="fas fa-circle-check"></i> Analytics dashboard</li>
                                 </ul>
                             </div>
-                            <div class="card">
-                                <div class="row detail-item mt-1">
-                                    <div class="col-6 d-flex align-items-center">
-                                        <img src="assets/img/icon/info.svg" alt="">
+                            <div class="">
+                                <!-- First Item -->
+                                <div class="detail-item mb-3 pb-3 bg-white border rounded">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/img/icon/info.svg" alt="" class="me-2">
                                         <span>Insurance claim filing (starting at $0.25/claim)</span>
                                     </div>
-                                    <div class="col-6 text-end align-items-center d-flex">
-                                        <span class="tele_card">10 claims included/mo</span>
+                                    <div class="text-end mt-2">
+                                        <span class="tele_card d-block">10 claims included/mo</span>
                                     </div>
                                 </div>
-            
-                                <div class="row detail-item mt-1">
-                                    <div class="col-6 d-flex align-items-center">
-                                        <img src="assets/img/icon/info.svg" alt="">
+                            
+                                <!-- Second Item -->
+                                <div class="detail-item mb-3 pb-3 bg-white border rounded">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/img/icon/info.svg" alt="" class="me-2">
                                         <span>Wiley Treatment Planner</span>
                                     </div>
-                                    <div class="col-6 text-end">
-                                        <span class="tele_card">Add for $15/mo</span>
+                                    <div class="text-end mt-2">
+                                        <span class="tele_card d-block">Add for $15/mo</span>
                                     </div>
                                 </div>
-            
-                                <div class="row detail-item mt-1">
-                                    <div class="col-6 d-flex align-items-center">
-                                        <img src="assets/img/icon/info.svg" alt="">
+                            
+                                <!-- Third Item -->
+                                <div class="detail-item pb-3 bg-white border rounded">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/img/icon/info.svg" alt="" class="me-2">
                                         <span>Telehealth</span>
                                     </div>
-                                    <div class="col-6 text-end">
-                                        <span class="tele_card">Included</span>
+                                    <div class="text-end mt-2">
+                                        <span class="tele_card d-block">Included</span>
                                     </div>
                                 </div>
                             </div>
-                            <a href="pricing.html" class="th-btn mt-4">Start For Free<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        </div>
+                    
+                        <!-- Align the button to the bottom -->
+                        <div class="mt-auto price-card_content">
+                            <a href="pricing.html" class="th-btn">Start For Free<i class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
+                    
                 </div>
             
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                    <div class="price-card">
+                    <div class="price-card d-flex flex-column">
                         <div class="price-card_top">
                             <h3 class="price-card_title">Plus</h3>
                             <p class="price-card_text">Expand your practice with every feature available.</p>
@@ -348,7 +362,8 @@ Price Area
                                 <div class="price-particle" id="price-p4"></div>
                             </div>
                         </div>
-                        <div class="price-card_content">
+                    
+                        <div class="price-card_content flex-grow-1">
                             <h3 class="ever_incl">Everything in Essential, plus:</h3>
                             <div class="checklist">
                                 <ul>
@@ -360,40 +375,48 @@ Price Area
                                     <li><i class="fas fa-circle-check"></i> Add clinicians ($59/mo per person)</li>
                                 </ul>
                             </div>
-                            <div class="card">
-                                <div class="row detail-item mt-1">
-                                    <div class="col-6 d-flex align-items-center">
-                                        <img src="assets/img/icon/info.svg" alt="">
+                            <div class="">
+                                <!-- First Item -->
+                                <div class="detail-item mb-3 pb-3 bg-white border rounded">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/img/icon/info.svg" alt="" class="me-2">
                                         <span>Insurance claim filing (starting at $0.25/claim)</span>
                                     </div>
-                                    <div class="col-6 text-end align-items-center d-flex">
-                                        <span class="tele_card">35 claims included/mo</span>
+                                    <div class="text-end mt-2">
+                                        <span class="tele_card d-block">35 claims included/mo</span>
                                     </div>
                                 </div>
-            
-                                <div class="row detail-item mt-1">
-                                    <div class="col-6 d-flex align-items-center">
-                                        <img src="assets/img/icon/info.svg" alt="">
-                                        <span>Included</span>
+                    
+                                <!-- Second Item -->
+                                <div class="detail-item mb-3 pb-3 bg-white border rounded">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/img/icon/info.svg" alt="" class="me-2">
+                                        <span>Wiley Treatment Planner</span>
                                     </div>
-                                    <div class="col-6 text-end">
-                                        <span class="tele_card">Add for $15/mo</span>
+                                    <div class="text-end mt-2">
+                                        <span class="tele_card d-block">Included</span>
                                     </div>
                                 </div>
-            
-                                <div class="row detail-item mt-1">
-                                    <div class="col-6 d-flex align-items-center">
-                                        <img src="assets/img/icon/info.svg" alt="">
+                    
+                                <!-- Third Item -->
+                                <div class="detail-item pb-3 bg-white border rounded">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/img/icon/info.svg" alt="" class="me-2">
                                         <span>Telehealth</span>
                                     </div>
-                                    <div class="col-6 text-end">
-                                        <span class="tele_card">Included</span>
+                                    <div class="text-end mt-2">
+                                        <span class="tele_card d-block">Included</span>
                                     </div>
                                 </div>
                             </div>
-                            <a href="pricing.html" class="th-btn mt-4">Start For Free<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        </div>
+                    
+                        <!-- Button aligned to the bottom -->
+                        <div class="mt-auto price-card_content">
+                            <a href="pricing.html" class="th-btn">Start For Free<i class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
+                    
                 </div>
             
             </div>
@@ -441,14 +464,14 @@ Cta Area
             </div>
             
             <div class="plans_brdr">
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <h5>Scheduling</h5>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -472,7 +495,7 @@ Cta Area
                     </div>
                 </div>
     
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -496,7 +519,7 @@ Cta Area
                     </div>
                 </div>
     
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -520,7 +543,7 @@ Cta Area
                     </div>
                 </div>
     
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -544,7 +567,7 @@ Cta Area
                     </div>
                 </div>
     
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -553,6 +576,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -568,7 +592,7 @@ Cta Area
                     </div>
                 </div>
     
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -577,6 +601,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -592,7 +617,7 @@ Cta Area
                     </div>
                 </div>
     
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -601,6 +626,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -616,7 +642,7 @@ Cta Area
                     </div>
                 </div>
     
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -641,7 +667,7 @@ Cta Area
                     </div>
                 </div>
     
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -665,7 +691,7 @@ Cta Area
                     </div>
                 </div>
     
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -679,6 +705,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -688,7 +715,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -702,6 +729,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -711,7 +739,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -726,6 +754,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -738,7 +767,7 @@ Cta Area
             </div>
 
             <div class="plans_brdr">
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="mt-3">
                             <h5>Documentation</h5>
@@ -747,7 +776,7 @@ Cta Area
                     
                 </div>
     
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -771,7 +800,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -795,7 +824,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -819,7 +848,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -843,7 +872,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -867,7 +896,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -890,7 +919,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -913,7 +942,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -922,6 +951,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -936,7 +966,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -945,6 +975,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -959,7 +990,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -968,6 +999,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -982,7 +1014,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1008,14 +1040,14 @@ Cta Area
             </div>
 
             <div class="plans_brdr">
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3 mt-3">
                         <div class="">
                             <h5>Billing</h5>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1039,7 +1071,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1063,7 +1095,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1087,7 +1119,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1111,7 +1143,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1135,7 +1167,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1159,7 +1191,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1183,7 +1215,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1193,6 +1225,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -1207,7 +1240,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1217,6 +1250,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -1231,7 +1265,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1241,6 +1275,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -1255,7 +1290,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1265,6 +1300,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -1282,7 +1318,7 @@ Cta Area
             </div>
 
             <div class="plans_brdr">
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="mt-3">
                             <h5>Accounts and More
@@ -1292,7 +1328,7 @@ Cta Area
                     
                 </div>
     
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1315,7 +1351,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1339,7 +1375,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1363,7 +1399,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1387,7 +1423,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1411,7 +1447,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1421,6 +1457,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -1435,7 +1472,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1458,7 +1495,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1468,6 +1505,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -1482,7 +1520,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1491,11 +1529,13 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -1505,7 +1545,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1515,6 +1555,7 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
@@ -1529,7 +1570,7 @@ Cta Area
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row m-2">
                     <div class="col-3">
                         <div class="">
                             <img src="assets/img/icon/info.svg" alt="">
@@ -1539,11 +1580,13 @@ Cta Area
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="colzz">
+--
                             <!-- <img src="assets/img/icon/tick.svg" alt=""> -->
                         </div>
                     </div>

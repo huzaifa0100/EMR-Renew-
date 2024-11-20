@@ -32854,7 +32854,6 @@ span.select2-selection.select2-selection--single:focus {
 
 .tele_card {
   right: 0px;
-  position: absolute;
   margin-right: 0.5rem;
 }
 
@@ -33044,11 +33043,12 @@ span.select2-selection.select2-selection--single:focus {
 
 .sticky-section {
   position: sticky;
-  top: 7rem;
+  top: 6rem;
+  border-radius: 20px;
   /* Adjust this value based on your navbar height */
-  z-index: 1020;
+  /* z-index: 1020; */
   /* Make sure it sits above other content */
-  background-color: white;
+  background-color: #f1f1f1;
   /* Ensure visibility */
   padding: 10px;
   /* Optional: Add padding for spacing */
@@ -33069,19 +33069,19 @@ span.select2-selection.select2-selection--single:focus {
 
 @media (min-width: 991.99px) and (max-width:1195.97px) {
   .price-card {
-    height: 58rem;
+    min-height: 70rem;
   }
 }
 
 @media (min-width: 1300px) {
   .price-card {
-    height: 58rem;
+    min-height: 70rem;
   }
 }
 
 @media (min-width: 1195.99px) and ( max-width:1299.99px) {
   .price-card {
-    height: 66rem !important;
+    min-height: 74rem !important;
   }
 }
 
@@ -33092,7 +33092,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 @media (min-width: 767.99px) and (max-width:991.98px) {
   .price-card {
-    min-height: 66rem;
+    min-height: 73rem;
   }
 }
 
