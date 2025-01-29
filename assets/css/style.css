@@ -15928,8 +15928,8 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .map-sec iframe {
-  -webkit-filter: grayscale(100);
-  filter: grayscale(100);
+  /* -webkit-filter: grayscale(100); */
+  /* filter: grayscale(100); */
   height: 600px;
   /* Medium Large devices */
   /* Extra small devices */
@@ -33106,6 +33106,12 @@ span.select2-selection.select2-selection--single:focus {
 
 .mr-auto{
   margin-right:auto !important ;
+}
+
+.img_obj_res{
+  box-shadow: none !important;
+  object-fit: contain !important;
+  width: 70% !important;
 }
 
 /*# sourceMappingURL=style.css.map */
