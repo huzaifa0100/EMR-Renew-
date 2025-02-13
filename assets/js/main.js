@@ -1134,3 +1134,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+document.querySelectorAll('input[name="achievement-tab"]').forEach((input) => {
+    input.addEventListener('change', function () {
+        const filter = this.getAttribute('data-filter');
+
+        // Hide all content boxes
+        document.querySelectorAll('.custom-filter-item').forEach((item) => {
+            item.style.display = 'none';
+        });
+
+        // Show the selected content box
+        document.querySelectorAll(filter).forEach((item) => {
+            item.style.display = 'block';
+        });
+    });
+});
+
+// Trigger change event on page load to show the default checked content
+document.querySelector('input[name="achievement-tab"]:checked').dispatchEvent(new Event('change'));
